@@ -1,0 +1,89 @@
+.booking {
+  .container {
+    
+    .booking-content {
+      
+      .form {
+        padding: 1rem;
+        background-color: #e52b34;
+        form {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          padding: 48px;
+          color: white;
+
+          input,
+          select {
+            height: 2.3rem;
+            padding: 16px 22px;
+            border: 1px solid white;
+            border-radius: 2px;
+            font-size: 14px;
+            color: white;
+            background-color: #e52b34;
+            outline: 0;
+            &::placeholder {
+              color: white;
+            }
+          }
+          button {
+            border: none;
+            outline: none;
+            color: black;
+            font-weight: 500;
+            background-color: white;
+            padding: 16px 24px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            transition: 0.5s ease;
+            &:hover {
+              color: #e52b34;
+            }
+          }
+        }
+      }
+
+      .details {
+        padding: 1.5rem;
+        background-image: url(https://preview.colorlib.com/theme/tasteit/images/about.jpg.webp);
+        background-position: right;
+        background-size: cover;
+        margin-left: 40px;
+        
+        span {
+          font-family: "Dancing Script";
+          color: #e52b34;
+          font-size: 40px;
+          
+          margin-bottom: -30px;
+        }
+        h2 {
+          
+          font-size: 40px;
+          margin-top: -20px;
+        }
+        p {
+          color: gray;
+          font-size: 20px;
+          font-weight: 350;
+          margin-top: 20px;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .booking-content {
+    display: flex;
+  }
+
+  .menu-form {
+    .user-input {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}

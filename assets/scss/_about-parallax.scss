@@ -1,0 +1,51 @@
+.parallax {
+    background-image: url(https://preview.colorlib.com/theme/tasteit/images/bg_3.jpg.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+    text-align: center;
+    .container{
+        .row{
+            display: flex;
+            flex-direction: column;
+            .col{
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                span {
+                    color: white;
+                    font-weight: 700;
+                    font-size: 20px;
+                  }
+                  strong {
+                    color: white;
+                    font-size: 40px;
+                    font-weight: 900;
+                  }
+            }
+        }
+    }
+    
+       
+      }
+      
+@media only screen and (min-width: 1024px){
+    .parallax{
+        .container{
+            .row{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 50px;
+            }
+        }
+    }
+}

@@ -1,0 +1,118 @@
+.menu {
+  .container {
+    .heading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 90px;
+
+      span {
+        color: #e52b34;
+        font-size: 40px;
+        margin-bottom: -25px;
+
+        font-family: "Dancing Script";
+      }
+      h2 {
+        font-size: 40px;
+      }
+    }
+    .menu-content {
+      width: 100%;
+      gap: 30px;
+      display: flex;
+
+      margin-top: 30px;
+      flex-direction: column;
+      padding: 20px;
+      transition: 0.5s ease;
+      border: 1.5px dashed #e6e6e6;
+      &:hover {
+        border: 1.5px dashed #e52b34;
+      }
+      .menu-table {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        text-align: center;
+      }
+    }
+
+    .menu-item {
+      display: flex;
+      gap: 1rem;
+      margin: 20px 0;
+      padding: 20px 0;
+      transition: 0.5s ease;
+      border-bottom: 1.5px dashed #e6e6e6;
+      h3 {
+        transition: 0.5s ease;
+      }
+      &:hover {
+        h3 {
+          color: #e52b34;
+        }
+        border-bottom: 1.5px dashed #e52b34;
+      }
+
+      .meal {
+       
+        
+        
+
+        img {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+        }
+      }
+      .price {
+        color: #e52b34;
+      }
+      .info {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    .no-hover {
+      margin: 20px 0;
+      padding: 20px 0;
+      display: flex;
+      gap: 10px;
+      transition: 0.5s ease;
+
+      h3 {
+        transition: 0.5s ease;
+      }
+      &:hover {
+        h3 {
+          color: #e52b34;
+        }
+      }
+      .meal {
+        img {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          
+        }
+      }
+      .price {
+        color: #e52b34;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .menu-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .menu-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

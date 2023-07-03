@@ -1,0 +1,129 @@
+footer {
+  background-color: #1a1a1a;
+  .container {
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      .footer-main {
+        width: 100%;
+        
+       
+        p,
+        span {
+          font-size: 14px;
+        }
+        h2 {
+          color: white;
+          margin: 40px 0;
+        }
+        .left {
+          
+          padding: 20px;
+
+          p {
+            color: rgba(255, 255, 255, 0.7);
+            margin: 20px 0;
+          }
+          .icons {
+            display: flex;
+            gap: 20px;
+            a {
+              color: white;
+              background-color: #e52b34;
+              padding: 10px 15px;
+              border-radius: 100%;
+            }
+          }
+        }
+        .mid-left {
+          
+          padding: 20px;
+          ul {
+            li {
+              display: flex;
+              gap: 30px;
+              width: 100%;
+              margin: 10px 0;
+              span {
+                color: white;
+                width: 50%;
+              }
+              .gray {
+                color: grey;
+              }
+            }
+          }
+        }
+        .mid-right {
+          
+          padding: 20px;
+          .images {
+            display: flex;
+            flex-direction: column;
+            .split {
+              display: flex;
+              img {
+                width: 90px;
+                height: 100px;
+              }
+            }
+          }
+        }
+        .right {
+          
+          padding: 20px;
+          p {
+            color: gray;
+          }
+          input {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 0;
+            outline: 0;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            margin-top: 30px;
+          }
+          button {
+            background-color: #e52b34;
+            cursor: pointer;
+            border: 0;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            margin-top: 10px;
+            transition: 0.3s ease;
+            &:hover {
+              color: #e52b34;
+              background-color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+  .copyright {
+    width: 100%;
+    background-color: #e52b34;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 30px;
+    text-align: center;
+  }
+  img {
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .footer-main {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

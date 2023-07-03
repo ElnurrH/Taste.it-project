@@ -1,0 +1,29 @@
+.parallax {
+  background-image: url(https://preview.colorlib.com/theme/tasteit/images/bg_3.jpg.webp);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  text-align: center;
+  
+      span {
+        color: white;
+        font-weight: 700;
+        font-size: 20px;
+      }
+      h2 {
+        color: white;
+        font-size: 40px;
+        font-weight: 900;
+      }
+    }
+  
+
+
+
